@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+  transition: background-color 0.3s ease-in-out; 
+}
+
+.navbarcontainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+  font-size: 2.7vh; 
+}
+
+.navbarcontainer nav {
+  display: flex;
+  gap: 50px;
+}
+
+nav a {
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+nav a:hover {
+  background-color: white;
+}
+
+.logo {
+  font-size: 4vh;
+}
+
+/* home page */
+.section {
+  padding: 0px 80px;
+  margin-top: 120px; 
+  line-height: 60px;
+  font-size: 4vh;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.sub{
+  
+  font-size: 5vh;
+}
+
+/* About, Services, Contact pages */
+.about, .service, .contact {
+  font-size: 2.7vh;
+  margin-top: 150px;
+  line-height: 50px;
+  text-align: center;
+}
