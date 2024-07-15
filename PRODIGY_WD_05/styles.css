@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  background: url(1.png);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap:50px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  font-family: "Bona Nova SC", serif;
+  color: white;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  height: max-content;
+  padding: 30px 80px;
+
+}
+h1 {
+  font-weight: bolder;
+}
+input::placeholder {
+  color: #087ea2;
+}
+
+/* CVS with # */
+
+/* #018da5,#80daeb,#67ddab,#0b9b8a,#909090 */
+
+#location {
+  font-family: "Bona Nova SC", serif;
+
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.877);
+  background: transparent;
+  color: #087ea2;
+  margin-bottom: 30px;
+}
+
+#getWeather {
+  font-family: "Montserrat", sans-serif;
+  padding: 13px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #087ea2;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.877);
+}
+#getWeather:hover {
+  background-color: white;
+}
+#description {
+  color: rgba(245, 245, 245, 0.629);
+}
+
+.weather-info{
+  font-family: "Montserrat", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap:50px;
+  font-size: 20px;
+  color:#087ea2;
+  font-weight: 600;
+}
+
+.weather-info div{
+  display: flex;
+  gap:100px;
+}

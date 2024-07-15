@@ -33,7 +33,9 @@ start.addEventListener("click", function () {
       minute = 0;
       hour++;
     }
+
     second++;
+
     totalElapsedTime = hour * 3600 + minute * 60 + second;
 
     seconds.innerHTML = second <= 9 ? "0" + second : second;
@@ -72,6 +74,7 @@ lap.addEventListener("click", function () {
   }
 
   lapCount++;
+  
   const currentLapTime = totalElapsedTime - previousLapTime;
   previousLapTime = totalElapsedTime;
 
