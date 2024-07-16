@@ -1,5 +1,6 @@
-// script.js
 const cells = document.querySelectorAll(".cell");
+const messageDisplay = document.getElementById("message");
+const resetButton = document.getElementById("reset-button");
 let currentPlayer = "X";
 let board = ["", "", "", "", "", "", "", "", ""];
 let gameActive = true;
@@ -24,13 +25,13 @@ function handleClick(event) {
   event.target.textContent = currentPlayer;
 
   if (checkWin()) {
-    alert(`${currentPlayer} wins!`);
+    displayMessage(`${currentPlayer} wins!`);
     gameActive = false;
     return;
   }
 
   if (board.every((cell) => cell !== "")) {
-    alert("It's a draw!");
+    displayMessage("It's a draw!");
     gameActive = false;
     return;
   }
@@ -44,4 +45,17 @@ function checkWin() {
   });
 }
 
+function displayMessage(message) {
+  messageDisplay.textContent = message;
+}
+
+function resetGame() {
+  board = ["", "", "", "", "", "", "", "", ""];
+  cells.forEach((cell) => (cell.textContent = ""));
+  currentPlayer = "X";
+  gameActive = true;
+  messageDisplay.textContent = "";
+}
+
 cells.forEach((cell) => cell.addEventListener("click", handleClick));
+resetButton.addEventListener("click", resetGame);
