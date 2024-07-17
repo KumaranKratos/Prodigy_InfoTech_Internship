@@ -1,3 +1,4 @@
+Prodigy_Internship
 TASK 1: Interactive Navigation Menu :
 
 This is an interactive navigation menu that changes color or style when scrolled or when hovering over a menu item. The menu has a fixed position and is visible on all pages. It is built using HTML, CSS, and JavaScript.
